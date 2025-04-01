@@ -6,7 +6,7 @@ credit() {
        echo ""
     done
     echo "============================================="
-    echo "             MDM Tools by Kaitiz             "
+    echo "             MDM Tools                       "
     echo "============================================="
 }
 
@@ -181,8 +181,8 @@ handle_first_setup() {
                 do
                    echo ""
                 done
-                if [ -d "/Volumes/Macintosh HD - Data" ]; then
-                    diskutil rename "Macintosh HD - Data" "Data"
+                if [ -d "/Volumes/Untitled - Data" ]; then
+                    diskutil rename "Untitled - Data" "Data"
                 fi
                 echo ""
                 dscl -f /Volumes/Data/private/var/db/dslocal/nodes/Default localhost -passwd /Local/Default/Users/root
@@ -210,8 +210,8 @@ handle_first_setup() {
                 do
                    echo ""
                 done
-                if [ -d "/Volumes/Macintosh HD - Data" ]; then
-                    diskutil rename "Macintosh HD - Data" "Data"
+                if [ -d "/Volumes/Untitled - Data" ]; then
+                    diskutil rename "Untitled - Data" "Data"
                 fi
                 touch /Volumes/Data/private/var/db/.AppleSetupDone
                 echo ""
